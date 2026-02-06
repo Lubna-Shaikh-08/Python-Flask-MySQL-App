@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_REPO = 'ajit0101/flask-app'
+        DOCKERHUB_REPO = 'Lubna-Shaikh-08/flask-app'
         IMAGE_TAG = "${BUILD_NUMBER}"
 
         MYSQL_ROOT_PASSWORD = credentials('mysql-root-password')
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-creds',
-                    url: 'https://github.com/ajit010/Python-Flask-MySQL-App'
+                    url: 'git@github.com:Lubna-Shaikh-08/Python-Flask-MySQL-App.git'
             }
         }
 

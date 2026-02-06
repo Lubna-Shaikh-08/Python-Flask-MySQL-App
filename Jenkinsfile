@@ -17,7 +17,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'git-creds',
-                    url: 'git@github.com:Lubna-Shaikh-08/Python-Flask-MySQL-App.git'
+                    url: 'https://github.com/Lubna-Shaikh-08/Python-Flask-MySQL-App.git'
             }
         }
 

@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_REPO = 'Lubna-Shaikh-08/flask-app'
+        DOCKERHUB_REPO = 'lubna08/flask-app'
         IMAGE_TAG = "${BUILD_NUMBER}"
 
         MYSQL_ROOT_PASSWORD = credentials('mysql-root-password')
